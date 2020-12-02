@@ -1,0 +1,9 @@
+[{"id":"27a70148-5686-4c71-bacf-b37df045704d",
+    "name":"product-0",
+    "description":"Product 0",
+    "created_at":"2020-12-02T23:45:30.712Z",
+    "updated_at":"2020-12-02T23:45:30.712Z",
+    "reviews": [
+        { "author": "Oliver", "star_rating": 5, "headline": "I love this product!", "body": "This sofa has completely changed my life. The delivery process couldn't have been easier. I want to sing about Oliver Space from the rooftops!" }
+    ]
+},{"id":"0b2ac728-ab5a-47dc-b238-a11959e399cc","name":"product-1","description":"Product 1","created_at":"2020-12-02T23:45:30.726Z","updated_at":"2020-12-02T23:45:30.726Z"},{"id":"fe2cece6-b7a8-4c8f-b4ad-a23ec254e970","name":"product-2","description":"Product 2","created_at":"2020-12-02T23:45:30.748Z","updated_at":"2020-12-02T23:45:30.748Z"},{"id":"7c62ee34-055a-4198-9a99-bf19f5994216","name":"product-3","description":"Product 3","created_at":"2020-12-02T23:45:30.766Z","updated_at":"2020-12-02T23:45:30.766Z"},{"id":"206f6cad-1033-4c56-837d-e95c6e85ae20","name":"product-4","description":"Product 4","created_at":"2020-12-02T23:45:30.788Z","updated_at":"2020-12-02T23:45:30.788Z"}]
