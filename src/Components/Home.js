@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../Styles/Home.scss';
 
-class Home extends Component {
+class Home extends React.Component {
   render() {
     return (
         <div className="Home">
@@ -12,42 +12,40 @@ class Home extends Component {
             Welcome!
           </h1>
 
-          <h3>
+          <h2>
             Oliver Space Take-Home Instructions
-          </h3>
+          </h2>
           <p>
-            Your mission, if you choose to accept it, is to build out a mock of a user-focused view
-            (wireframes attached below). The idea is that this would mimic a view that our Operations
-            team might use to better understand Oliver's users.
+            Your mission, if you choose to accept it, is to build out a mock of a product reviews flow. 
+            This includes a page for users to submit their reviews as well as a page to read reviews.
           </p>
+          <h3>Requirements</h3>
+          <ul>
+            <li>Create a page where a user can review a given product with the following information:</li>
+              <ul>
+                <li>Their name (the author)</li>
+                <li>A star rating</li>
+                <li>Headline text (a title for their review)</li>
+                <li>The body of the review (a longer paragraph)</li>
+              </ul>
+              <li>Create a page where a user can view all of the reviews for a given product</li>
+            </ul>
           <p>
-            Please spend 90 minutes completing this task to whatever extent you can finish, but don't
-            go over time. Please add notes on anything else you would have done with more time
-            if you don't feel like your work is complete. Feel free to use any third-party libraries
-            that you find helpful.
-          </p>
-
-          <h3>
-            API
-          </h3>
-          <p>
-            Please use the <a href="https://jsonplaceholder.typicode.com/" target="_blank" rel="noopener noreferrer" >
-            JSONPlaceholder API</a> /users and /posts endpoints to grab User information and Post information.
-            The documentation should all be there, but feel free to contact us with any questions. You can
-            use the Javascript fetch API or setup something like axios to make the requests, or just mock
-            out the data if you're struggling to get it from the JSONPlaceholder API.
+            Please spend 90 minutes completing this task to whatever extent you can finish, but don't go over time. 
+            The expectation is not that you will get through all of the requirements, so please add notes on anything 
+            else you would have done with more time. Feel free to use any third-party libraries that you find helpful.
           </p>
 
-          <h3>
-            Wireframes
-          </h3>
-          <a href="https://docs.google.com/drawings/d/1jOYV-zriDjOK7eG-KanQOIwcS36e8O8T9nmo2lZJLDI/edit?usp=sharing"
-          target="_blank" rel="noopener noreferrer" >
-            Users View
-          </a>
-          <br />
-          <a href="https://docs.google.com/drawings/d/1ZqQmvzBSB7hq1VJmXpH8ybI3JREnp-KHkC27fWZKN-c/edit?usp=sharing"
-          target="_blank" rel="noopener noreferrer" >Individual User View</a>
+          <h3>Running the App</h3>
+          <ul>
+            <li>Run <code>npm install</code> first</li>
+            <li>Start the mock JSON server on port 3004 using <code>json-server --watch db.json</code></li>
+            <li>Start the React app on port 3000 using <code>npm start</code></li>
+            <li>You can then make requests to <code>http://localhost:3004/products</code>, <code>http://localhost:3004/reviews</code> or <code>http://localhost:3004/products/:id/reviews</code> using axios, or any of your preferred methods</li>
+          </ul>
+          <p>More info on json-server <a href="https://www.npmjs.com/package/json-server">here</a></p>
+
+          <p>This project was bootstrapped with <a href="https://github.com/facebook/create-react-app">Create React App</a></p>
 
           <h4>
             Best of luck! Feel free to email <a href="mailto:caroline@oliver.space">caroline@oliver.space</a>

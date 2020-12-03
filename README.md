@@ -1,97 +1,25 @@
 ## Oliver Space Take-Home Instructions
 
-Your mission, if you choose to accept it, is to build out a mock of a user-focused view
-(wireframes attached below). The idea is that this would mimic a view that our Operations
-team might use to better understand Oliver's users.
+Your mission, if you choose to accept it, is to build out a mock of a product reviews flow. 
+This includes a page for users to submit their reviews as well as a page to read reviews.
+
+REQUIREMENTS:
+- Create a page where a user can review a given product with the following information:
+    - Their name (the author)
+    - A star rating
+    - Headline text (a title for their review)
+    - The body of the review (a longer paragraph)
+- Create a page where a user can view all of the reviews for a given product
 
 Please spend 90 minutes completing this task to whatever extent you can finish, but don't
-go over time. Please add notes on anything else you would have done with more time
-if you don't feel like your work is complete. Feel free to use any third-party libraries
+go over time. The expectation is not that you will get through all of the requirements, so please add notes on anything else you would have done with more time. Feel free to use any third-party libraries
 that you find helpful.
 
-## API
-Please use the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/) /users and /posts endpoints to grab User information and Post information.
-The documentation should all be there, but feel free to contact us with any questions. You can
-use the Javascript fetch API or setup something like axios to make the requests, or just mock
-out the data if you're struggling to get it from the JSONPlaceholder API.
+## Running the app
+Start the mock JSON server on port 3004 using `json-server --watch db.json`
+Start the React app on port 3000 using `npm start`
+You can then make requests to http://localhost:3004/products, http://localhost:3004/reviews or http://localhost:3004/products/:id/reviews using axios, or any of your preferred methods
 
-## Wireframes
-[Users View](https://docs.google.com/drawings/d/1jOYV-zriDjOK7eG-KanQOIwcS36e8O8T9nmo2lZJLDI/edit?usp=sharing)
-
-[Individual User View](https://docs.google.com/drawings/d/1ZqQmvzBSB7hq1VJmXpH8ybI3JREnp-KHkC27fWZKN-c/edit?usp=sharing)
-
-Best of luck! Feel free to email <a href="mailto:caroline@oliver.space">caroline@oliver.space</a>
-or text (203) 434 - 2075 if you have any questions while you're completing the exercise. I'm
-happy to help :)
-
-
-
+More info on json-server [here](https://www.npmjs.com/package/json-server)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
